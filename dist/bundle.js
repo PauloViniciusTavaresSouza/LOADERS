@@ -46,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_title_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/title.js */ \"./src/components/title.js\");\n/* harmony import */ var _components_image_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/image.js */ \"./src/components/image.js\");\n/* harmony import */ var _components_button_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/button.js */ \"./src/components/button.js\");\nfunction _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }\nfunction _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }\n\n\n\nvar title = new _components_title_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\ntitle.create('Primeira página');\nvar image = new _components_image_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\nimage.insertImage();\nvar button = new _components_button_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"]();\nbutton.create();\n\n// Babel Spread\n\nvar obj = {\n  a: 1,\n  b: 2,\n  c: 3,\n  d: 4\n};\nvar a = obj.a,\n  b = obj.b,\n  teste = _objectWithoutProperties(obj, [\"a\", \"b\"]);\nconsole.log(a);\nconsole.log(b);\nconsole.log(teste);\n\n//# sourceURL=webpack://loaders/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_title_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/title.js */ \"./src/components/title.js\");\n/* harmony import */ var _components_image_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/image.js */ \"./src/components/image.js\");\n/* harmony import */ var _components_button_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/button.js */ \"./src/components/button.js\");\n/* harmony import */ var _templates_warning_html__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./templates/warning.html */ \"./src/templates/warning.html\");\n/* harmony import */ var _files_frases_txt__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./files/frases.txt */ \"./src/files/frases.txt\");\nfunction _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }\nfunction _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }\n\n\n\n\n\nvar title = new _components_title_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\ntitle.create('Primeira página');\nvar image = new _components_image_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\nimage.insertImage();\nvar button = new _components_button_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"]();\nbutton.create();\n\n// Babel Spread\n\nvar obj = {\n  a: 1,\n  b: 2,\n  c: 3,\n  d: 4\n};\nvar a = obj.a,\n  b = obj.b,\n  teste = _objectWithoutProperties(obj, [\"a\", \"b\"]);\nconsole.log(a);\nconsole.log(b);\nconsole.log(teste);\n\n// Import de HTML\n\nvar body = document.querySelector('body');\nbody.innerHTML += _templates_warning_html__WEBPACK_IMPORTED_MODULE_3__[\"default\"];\n\n// Import de arquivo text\n\nvar frase = _files_frases_txt__WEBPACK_IMPORTED_MODULE_4__[\"default\"];\nconsole.log(frase);\n\n//# sourceURL=webpack://loaders/./src/index.js?");
 
 /***/ }),
 
@@ -97,6 +97,26 @@ eval("\n\nmodule.exports = function (i) {\n  return i[1];\n};\n\n//# sourceURL=w
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"7a458609d8152d166047f64a70ba666e.jpg\");\n\n//# sourceURL=webpack://loaders/./src/img/perfil.jpg?");
+
+/***/ }),
+
+/***/ "./src/templates/warning.html":
+/*!************************************!*\
+  !*** ./src/templates/warning.html ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Module\nvar code = \"<div>\\r\\n  <p class=\\\"warning\\\">Você não pode acessar esta página</p>\\r\\n</div>\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack://loaders/./src/templates/warning.html?");
+
+/***/ }),
+
+/***/ "./src/files/frases.txt":
+/*!******************************!*\
+  !*** ./src/files/frases.txt ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (\"o webpack é muito legal. \");\n\n//# sourceURL=webpack://loaders/./src/files/frases.txt?");
 
 /***/ }),
 
